@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Note d'agent : Arthur Avom</title>
+<style>
+  @page { size: A4; margin: 16mm 17mm 15mm 17mm; }
+  :root { --encre:#14213D; --bleu:#1F5FA0; --ambre:#C2780A; --papier:#F7F4EE; --trait:#DCD5C7; --doux:#5B6577; }
+  * { box-sizing: border-box; }
+  body { font-family: Inter, sans-serif; font-size: 9.6pt; line-height: 1.45; color: var(--encre); margin: 0; }
+  header { border-top: 5px solid var(--encre); padding-top: 9px; display: flex; justify-content: space-between; align-items: flex-end; }
+  .kicker { font-size: 7.8pt; letter-spacing: .12em; text-transform: uppercase; color: var(--ambre); font-weight: 600; }
+  h1 { font-family: Lora, serif; font-size: 19pt; line-height: 1.15; margin: 3px 0 0; font-weight: 700; }
+  .meta { text-align: right; font-size: 8pt; color: var(--doux); line-height: 1.5; }
+  .avert { background: var(--papier); border-left: 3px solid var(--ambre); padding: 6px 10px; font-size: 8.4pt; margin: 10px 0 4px; color: var(--doux); }
+  h2 { font-family: Lora, serif; font-size: 11.5pt; margin: 13px 0 4px; display: flex; gap: 8px; align-items: baseline; }
+  h2 span { font-family: Inter, sans-serif; font-size: 8pt; color: var(--ambre); font-weight: 700; }
+  p { margin: 0 0 6px; }
+  .chiffres { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin: 6px 0 8px; }
+  .chiffres div { background: var(--papier); padding: 7px 9px; border-radius: 3px; }
+  .chiffres b { display: block; font-family: Lora, serif; font-size: 15pt; line-height: 1.1; }
+  .chiffres small { font-size: 7.6pt; color: var(--doux); }
+  .deux { display: grid; grid-template-columns: 1.05fr 1fr; gap: 14px; align-items: start; }
+  img { width: 100%; display: block; }
+  .legende { font-size: 7.4pt; color: var(--doux); margin-top: 2px; }
+  table { border-collapse: collapse; width: 100%; font-size: 8.4pt; margin: 4px 0 6px; }
+  th { text-align: left; font-weight: 600; border-bottom: 1.5px solid var(--encre); padding: 3px 5px; font-size: 7.8pt; text-transform: uppercase; letter-spacing: .04em; }
+  td { border-bottom: 1px solid var(--trait); padding: 4px 5px; vertical-align: top; }
+  .reco { border: 1.5px solid var(--encre); padding: 9px 12px; margin: 6px 0; }
+  .reco p:last-child { margin: 0; }
+  ol { margin: 2px 0 6px; padding-left: 17px; }
+  li { margin-bottom: 3px; }
+  .saut { break-before: page; }
+  footer { margin-top: 10px; padding-top: 6px; border-top: 1px solid var(--trait); font-size: 7.4pt; color: var(--doux); }
+  .h { color: var(--ambre); font-weight: 600; }
+</style>
+</head>
+<body>
+
+<header>
+  <div>
+    <div class="kicker">Note de négociation · côté joueur</div>
+    <h1>Arthur Avom (FC Lorient) :<br>prolonger, vendre en janvier ou partir libre ?</h1>
+  </div>
+  <div class="meta">Justine Meignen<br>2 novembre 2026<br>2 pages</div>
+</header>
+
+<div class="avert">Exercice réalisé à partir de données publiques. Je ne représente ni le joueur ni le club et je n'ai pas vu son contrat. Les montants marqués <span class="h">hypothèse</span> ne sont pas mesurés.</div>
+
+<h2><span>01</span>La situation</h2>
+<p>Arthur Avom, 21 ans (22 le 15 décembre), milieu central camerounais, 14 sélections. Son contrat avec Lorient se termine le 30 juin 2027 : le club a levé cet été l'option d'un an, mais n'a pas trouvé d'accord pour le vendre. Il demandait environ 15 M€ en juillet (L'Attaquant, 10/07/2026). Avom reste le troisième joueur le mieux coté parmi les 148 joueurs de Ligue 1 de mes données dont le contrat s'arrête en 2027.</p>
+<p>Le mercato d'hiver ouvre en janvier. Et dès le 1er janvier 2027, un club étranger peut lui faire signer un pré-contrat, puisqu'il lui restera moins de six mois (règlement FIFA du statut et du transfert des joueurs, art. 18.3).</p>
+
+<div class="chiffres">
+  <div><b>20 M€</b><small>cote Transfermarkt au 1er juin 2026 (7 M€ en octobre 2025)</small></div>
+  <div><b>13 à 42 M€</b><small>sa cote prédite au 30 juin 2027 par mon modèle, fourchette à 80 %</small></div>
+  <div><b>0,88 ×</b><small>prix payé / cote, médiane de 6 ventes de Ligue 1 à un an de la fin de contrat, été 2026</small></div>
+  <div><b>69 %</b><small>des minutes de Lorient jouées en 2025-26 (31 matchs)</small></div>
+</div>
+
+<h2><span>02</span>Ce qu'il vaut</h2>
+<div class="deux">
+  <div>
+    <p>Sur le terrain, c'est un récupérateur : tacles et interceptions par 90 minutes au niveau des 20 % meilleurs milieux de Ligue 1, et une note moyenne du même niveau. Il crée un peu plus que la moyenne des milieux et marque peu. Ce qui le vend, c'est son volume de jeu et son âge.</p>
+    <p>Mon modèle situe sa cote de juin 2027 entre 13 et 42 M€, avec 23,6 M€ au centre. La fourchette est large parce qu'à 21 ans, une cote peut encore doubler ou s'effondrer, et le modèle ignore qu'il ne lui reste qu'un an.</p>
+    <p>Le meilleur repère, ce sont donc les ventes de l'été. Pagis, Gboho, Sinayoko, Ekomié et Caio Henrique, tous à un an de la fin de leur contrat, sont partis entre 0,8 et 1,03 fois leur cote. Tom Louchet est l'exception : 2 M€ pour une cote de 7 M€. Appliqué à Avom, ce repère donne <b>16 à 21 M€ aux conditions de l'été dernier, 17,5 M€ en médiane</b>, plus que ce que Lorient demandait en juillet.</p>
+  </div>
+  <div>
+    <img src="../figures/3_comparables.png" alt="Prix payé contre cote pour six transferts de l'été 2026">
+    <p class="legende">Montants de la presse (Maxifoot, info.fr, beIN Sports, Foot Mercato) ; celui de Gboho n'est pas officiel. Avec six cas, je m'en sers comme d'un ordre de grandeur.</p>
+  </div>
+</div>
+
+<div class="saut"></div>
+
+<h2><span>03</span>Les options</h2>
+<table>
+  <tr><th style="width:21%">Option</th><th style="width:26%">Lorient touche</th><th style="width:27%">Le joueur</th><th>Risque principal</th></tr>
+  <tr><td>Prolonger</td><td>rien aujourd'hui, garde un actif coté 13 à 42 M€ en 2027</td><td>hausse de salaire, sécurité</td><td>en France, pas de clause libératoire : son départ dépendra du club</td></tr>
+  <tr><td>Vente en janvier</td><td><span class="h">hypothèse</span> 10 à 16 M€ (50 à 80 % de la cote, faute de comparable d'hiver)</td><td>contrat de 4 ou 5 ans tout de suite</td><td>fenêtre courte, peu d'acheteurs prêts à payer</td></tr>
+  <tr><td>Vente à l'été 2027</td><td>impossible sans prolongation : le contrat s'arrête le 30 juin</td><td>seulement via une prolongation</td><td>un « accord pour le laisser partir » non homologué n'a aucun effet</td></tr>
+  <tr><td>Départ libre en juillet 2027</td><td>0, hors indemnité de formation éventuelle (RSTP, annexe 4)</td><td>prime à la signature et salaire plus hauts, l'acheteur n'ayant pas d'indemnité à payer</td><td>une blessure ou une saison ratée d'ici juin</td></tr>
+</table>
+
+<h2><span>04</span>Ce que je proposerais</h2>
+<div class="reco">
+  <p><b>Ouvrir le marché dès janvier, sans fermer la porte au départ libre.</b> Le joueur a intérêt à faire savoir qu'il ne prolongera pas aux conditions actuelles. Lorient, qui risque de tout perdre en juin, a alors intérêt à vendre en janvier à un prix proche des ventes de l'été. Si aucun club ne paie un montant que Lorient accepte, le joueur peut toujours signer un pré-contrat à l'étranger et partir libre.</p>
+  <p>Je ne recommanderais une prolongation que courte (2029 au plus tard), avec une vraie hausse de salaire, puisque l'agent ne peut pas y inscrire de prix de sortie.</p>
+</div>
+
+<h2><span>05</span>Points de négociation</h2>
+<ol>
+  <li><b>Avec Lorient :</b> un prix de départ cohérent avec l'été (autour de 0,9 fois la cote) plutôt qu'avec la cote seule ; si le club veut un pourcentage à la revente, l'accepter en échange d'un prix fixe plus bas, qui facilite le départ.</li>
+  <li><b>Avec le club acheteur :</b> salaire, prime à la signature, durée de 5 ans au plus (Code du sport, art. L. 222-2-4, et RSTP, art. 18.2), part éventuelle en redevance d'image (art. L. 222-2-10-1).</li>
+  <li><b>Pour l'agent :</b> commission plafonnée à 10 % du contrat conclu (art. L. 222-17), carte professionnelle et déclaration de toute somme perçue (art. L. 222-7, loi du 3 août 2026). Côté FIFA, les plafonds de commission sont suspendus depuis le 30 décembre 2023 ; en France, celui du Code du sport reste applicable.</li>
+  <li><b>À retenir dans le prix :</b> 5 % de toute indemnité part aux clubs formateurs (mécanisme de solidarité, RSTP art. 21).</li>
+</ol>
+
+<h2><span>06</span>Ce que cette note ne sait pas</h2>
+<p>Le contrat réel du joueur et ses clauses, son état physique, ce qu'il veut, les offres déjà reçues. Les cotes s'arrêtent au 1er juin 2026 et les montants de transferts viennent de la presse. Les articles cités sont à revérifier dans leur version en vigueur avant toute utilisation.</p>
+
+<footer>Sources : Transfermarkt (jeu de données CC0, cotes au 01/06/2026) ; statistiques de match 2025-26 ; Foot-sur7 (17/10/2026) ; L'Attaquant (10/07/2026) ; Maxifoot, info.fr, beIN Sports, AfricaSoccer citant Foot Mercato (juin à septembre 2026) ; Code du sport ; règlement FIFA du statut et du transfert des joueurs ; Kohen Avocats (26/09/2026) ; Forefront Legal (17/06/2026). Calculs et notebook : github.com/jmeignen/dossier-agent-avom</footer>
+</body>
+</html>

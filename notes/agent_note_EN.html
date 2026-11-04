@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Agent note: Arthur Avom</title>
+<style>
+  @page { size: A4; margin: 15mm 17mm 14mm 17mm; }
+  :root { --ink:#14213D; --blue:#1F5FA0; --amber:#C2780A; --paper:#F7F4EE; --rule:#DCD5C7; --soft:#5B6577; }
+  body { font-family: Inter, sans-serif; font-size: 9.3pt; line-height: 1.42; color: var(--ink); margin: 0; }
+  header { border-top: 5px solid var(--ink); padding-top: 8px; display: flex; justify-content: space-between; align-items: flex-end; }
+  .kicker { font-size: 7.6pt; letter-spacing: .12em; text-transform: uppercase; color: var(--amber); font-weight: 600; }
+  h1 { font-family: Lora, serif; font-size: 16.5pt; line-height: 1.15; margin: 3px 0 0; }
+  .meta { text-align: right; font-size: 7.8pt; color: var(--soft); white-space: nowrap; padding-left: 12px; }
+  .note { background: var(--paper); border-left: 3px solid var(--amber); padding: 5px 9px; font-size: 8pt; color: var(--soft); margin: 9px 0 2px; }
+  h2 { font-family: Lora, serif; font-size: 10.8pt; margin: 10px 0 3px; }
+  p { margin: 0 0 5px; }
+  .figs { display: grid; grid-template-columns: repeat(4, 1fr); gap: 7px; margin: 5px 0 6px; }
+  .figs div { background: var(--paper); padding: 6px 8px; }
+  .figs b { display: block; font-family: Lora, serif; font-size: 13.5pt; }
+  .figs small { font-size: 7.3pt; color: var(--soft); }
+  .reco { border: 1.5px solid var(--ink); padding: 7px 11px; margin: 5px 0; }
+  ul { margin: 2px 0 4px; padding-left: 16px; } li { margin-bottom: 2px; }
+  footer { margin-top: 8px; padding-top: 5px; border-top: 1px solid var(--rule); font-size: 7pt; color: var(--soft); }
+</style>
+</head>
+<body>
+<header>
+  <div><div class="kicker">Negotiation note · player side</div>
+  <h1>Arthur Avom (FC Lorient): extend, sell in January, or leave on a free?</h1></div>
+  <div class="meta">Justine Meignen<br>2 November 2026</div>
+</header>
+<div class="note">An exercise built on public data. I don't act for the player or the club and haven't seen his contract. Anything marked "assumption" is not measured.</div>
+
+<h2>Where things stand</h2>
+<p>Avom is a 21-year-old Cameroonian central midfielder (14 caps). His Lorient contract runs to 30 June 2027 after the club triggered a one-year option this summer; Lorient was reportedly asking around €15m in July and no sale happened. From 1 January 2027 a foreign club can sign him to a pre-contract (FIFA RSTP, art. 18.3).</p>
+<div class="figs">
+  <div><b>€20m</b><small>Transfermarkt value, 1 June 2026 (€7m in Oct 2025)</small></div>
+  <div><b>€13–42m</b><small>my model's 80% range for his value in June 2027</small></div>
+  <div><b>0.88×</b><small>median fee / value, six Ligue 1 sales with a year left, summer 2026</small></div>
+  <div><b>80th</b><small>percentile for tackles + interceptions per 90 among Ligue 1 midfielders</small></div>
+</div>
+
+<h2>What he is worth</h2>
+<p>He wins the ball more than he scores. My model's range is wide because values swing most at his age, and it doesn't know his contract is running down. The better guide is this summer's market: Pagis, Gboho, Sinayoko, Ekomié and Caio Henrique all left with a year to go for 0.80 to 1.03 times their value; Tom Louchet went for about €2m against €7m. On last summer's terms that points to €16–21m for Avom. A January fee will be lower; I have no winter comparables, so my €10–16m is an assumption.</p>
+
+<h2>What I would advise</h2>
+<div class="reco"><p><b>Open the market in January without closing the door on a free transfer.</b> Make it clear he won't extend on current terms. Lorient, facing a zero in June, then has a reason to sell at a price close to the summer deals. If no fee works for Lorient, the player still holds the strongest card: a pre-contract abroad and a free move. I would only back a short extension (2029 at the latest) with a real pay rise, since French clubs can't include a release clause.</p></div>
+
+<h2>Rules that shape the deal</h2>
+<ul>
+  <li>Agent fee capped at 10% of the contract value (French Sports Code, art. L. 222-17); professional card and reporting of every payment under the 3 August 2026 law (art. L. 222-7). FIFA's own fee caps have been suspended since 30 December 2023.</li>
+  <li>Contracts of five years at most (art. L. 222-2-4; RSTP art. 18.2); part of the pay may be an image-rights fee (art. L. 222-2-10-1).</li>
+  <li>5% of any transfer fee goes to his training clubs (RSTP art. 21); training compensation may apply to a move abroad until the end of the season he turns 23.</li>
+</ul>
+<p style="color:var(--soft);font-size:8pt">Unknowns: his actual contract, fitness, what he wants, and offers already on the table. Values stop at 1 June 2026; fees come from press reports.</p>
+
+<footer>Sources: Transfermarkt (CC0 dataset); 2025-26 match data; Foot-sur7 (17/10/2026); L'Attaquant (10/07/2026); Maxifoot, info.fr, beIN Sports, Foot Mercato; French Sports Code; FIFA RSTP; Kohen Avocats; Forefront Legal. Notebook: github.com/jmeignen/dossier-agent-avom</footer>
+</body>
+</html>
